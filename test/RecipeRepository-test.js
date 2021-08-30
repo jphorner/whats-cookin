@@ -129,29 +129,12 @@ describe('Recipe', () => {
     expect(recipeRepo.filterByTag('snack')).to.deep.equal([recipeData[0], recipeData[2]]);
   });
 
-  // it('Should give feedback to the user if a tag cannot be found', () => {
-  //   const recipeRepo = new RecipeRepository(recipeData);
-  //   recipeRepo.filterByTag('antipasto');
-  //
-  //   expect(recipeRepo.filterByTag('antipasto')).to.equal('Sorry. This tag cannot be found');
-  // });
-
   it('Should filter recipes by name', () => {
     const recipeRepo = new RecipeRepository(recipeData);
-    recipeRepo.filterByName('Loaded Chocolate Chip Pudding Cookie Cups');
+    recipeRepo.filterByName('Chocolate');
     recipeRepo.filterByName('Dirty Steve\s Original Wing Sauce');
 
-    expect(recipeRepo.filterByName('Loaded Chocolate Chip Pudding Cookie Cups')).to.equal(recipeData[0]);
-    expect(recipeRepo.filterByName('Dirty Steve\s Original Wing Sauce')).to.equal(recipeData[1]);
+    expect(recipeRepo.filterByName('Chocolate')).to.deep.equal([recipeData[0]]);
+    expect(recipeRepo.filterByName('Dirty Steve\s Original Wing Sauce')).to.deep.equal([recipeData[1]]);
   });
-
-  // it.skip('Should give feedback to the user if a name cannot be found', () => {
-  //   const recipe1 = new Recipe(/* INSERT RECIPE PARAMETERS HERE */);
-  //   const recipe2 = new Recipe(/* INSERT RECIPE PARAMETERS HERE */);
-  //   const recipe3 = new Recipe(/* INSERT RECIPE PARAMETERS HERE */);
-  //   const recipeRepo = new RecipeRepository([recipe1, recipe2, recipe3]);
-  //   recipeRepo.filterByName('Grandma Ruth\s Chocolate Chip Cookies');
-  //
-  //   expect(recipeRepo.filterByName('Grandma Ruth\s Chocolate Chip Cookies')).to.equal('Sorry. This name cannot be found');
-  // });
 })

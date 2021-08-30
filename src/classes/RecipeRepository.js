@@ -12,7 +12,7 @@ class RecipeRepository {
   }
 
   filterByName(recipeName){
-    const filteredRecipes = this.recipeData.find((recipe) => {
+    const filteredRecipes = this.recipeData.filter((recipe) => {
       return recipe.name.includes(recipeName)
     })
 
