@@ -2,81 +2,94 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Whats Cookin</title>
   </head>
   <body>
     <header>
-      <h1>Whats Cookin</h1>
+      <article class="title-container">
+        <h1>Whats Cookin'?</h1>
+      </article>
     </header>
     <nav>
-      <button type="button" name="all recipes"></button>
-      <button type="button" name="home"></button>
-      <button type="button" name="saved recipes"></button>
+      <button type="button" name="all recipes">All Recipes</button>
+      <button type="button" name="home">Home</button>
+      <button type="button" name="saved recipes">Saved Recipes</button>
     </nav>
-    <button type="button" name="add a recipe"></button>
-    <button type="button" name="log in"></button>
-    <article section="main-content">
-    <article class="page-info"></article>
-      <section class="recipe-grid">
-        <article class="recipe">
-          <div class="recipe-content">
-            <img src="" alt="meal image" class="image">
-            <div class="favorite-star"></div>
-            <img class= src="" alt="favorite">
-            <div class="recipe-info">
-              <h2>Dish Name</h2>
-              <div class="ingredient-section">
-                <h4>Ingredients</h4>
-              <section class="ingredient-info">
-              </div>
-            </div>
-          </div>
+    <aside class="sidebars">
+      <section class="left-sidebar">
+        <button type="button" name="add a recipe">Add a Recipe</button>
+      </section>
+      <section class="right-sidebar">
+        <button type="button" name="login">Login</button>
+        <article class="scroll-arrow">
+          <img src="" alt="scroll arrow">
         </article>
       </section>
-      <aside class="scroll-arrow">
-        <img src="" alt="scroll arrow">
-      </aside>
-      <aside class="scroll-arrow-2 hidden">
-        <img src="" alt="scroll arrow">
-      </aside>
-      <section class="login hidden">
-        <h2>No account? Sign up!</h2>
-        <h2>User Name</h2> <br>
-          <input type="text" name="user name" value="">
-          <h2>Password</h2> <br>
-          <input type="text" name="password" value="">
-          <h2 hidden>Repeat Password</h2>
-          <input type="text" name="repeat-password" value="">
-          <button type="button" name="confirm"></button>
-      </section>
-      <section class="add-recipe hidden">
-        <h2>Title</h2> <br>
-        <input type="text" name="title" value="">
-        <h2>Image</h2> <br>
-        <input type="text" name="image" value="">
-        <h2>Ingredients</h2>
-        <input type="text" name="ingredient" value="">
-        <input type="text" name="amount" value="">
-        <img src="" alt="plus arrow">
-        <button type="button" name="submit"></button>
-      </section>
-      <section class="all-recipe-grid hidden">
-        <h2>Recipes</h2>
-        <input type="radio" name="favorites?" value="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <aside class="all-scroll-arrow">
+    </aside>
+    <section class="content-container">
+      <section section="main-content">
+        <section class="recipe-grid">
+          <article class="recipe">
+            <div class="recipe-content">
+              <img src="" alt="meal image" class="image">
+              <div class="favorite-star"></div>
+              <img class= src="" alt="favorite">
+              <div class="recipe-info">
+                <h2>Dish Name</h2>
+                <div class="ingredient-section">
+                  <h4>Ingredients</h4>
+                <section class="ingredient-info">
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- <aside class="scroll-arrow">
           <img src="" alt="scroll arrow">
-        </aside>
+        </aside> -->
+        <!-- <aside class="scroll-arrow-2 hidden">
+          <img src="" alt="scroll arrow">
+        </aside> -->
+        <section class="login hidden">
+          <h2>No account? Sign up!</h2>
+          <h2>User Name</h2> <br>
+            <input type="text" name="user name" value="">
+            <h2>Password</h2> <br>
+            <input type="text" name="password" value="">
+            <h2 hidden>Repeat Password</h2>
+            <input type="text" name="repeat-password" value="">
+            <button type="button" name="confirm"></button>
+        </section>
+        <section class="add-recipe hidden">
+          <h2>Title</h2> <br>
+          <input type="text" name="title" value="">
+          <h2>Image</h2> <br>
+          <input type="text" name="image" value="">
+          <h2>Ingredients</h2>
+          <input type="text" name="ingredient" value="">
+          <input type="text" name="amount" value="">
+          <img src="" alt="plus arrow">
+          <button type="button" name="submit"></button>
+        </section>
+        <section class="all-recipe-grid hidden">
+          <h2>Recipes</h2>
+          <input type="radio" name="favorites?" value="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <aside class="all-scroll-arrow">
+            <img src="" alt="scroll arrow">
+          </aside>
+        </section>
       </section>
-      <footer>
-      </footer>
-    </article>
+    </section>
+    <footer>
+    </footer>
   </body>
 </html>
