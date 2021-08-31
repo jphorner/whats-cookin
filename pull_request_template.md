@@ -1,5 +1,6 @@
-[PR for What's Cookin]
-*(assume (default) means no changes or NA)
+## [PR for What's Cookin 🍳]
+
+*(assume (default) means no changes or NA)*
 
 **What (if any) features are you implementing?**
 
