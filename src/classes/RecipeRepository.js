@@ -1,7 +1,22 @@
 class RecipeRepository {
-  constructor() {
+  constructor(recipeData) {
+    this.recipeData = recipeData || [];
+  }
 
-    // One class to get you started!
+  filterByTag(tagName){
+    const filteredRecipes = this.recipeData.filter((recipe) => {
+      return recipe.tags.includes(tagName)
+    })
+
+    return filteredRecipes;
+  }
+
+  filterByName(recipeName){
+    const filteredRecipes = this.recipeData.filter((recipe) => {
+      return recipe.name.includes(recipeName)
+    })
+
+    return filteredRecipes;
   }
 }
 
