@@ -102,7 +102,7 @@ describe('Recipe', () => {
       number: 2
       }
     ],
-    name: 'Elvis Pancakes',
+    name: 'Elvis Chocolate Pancakes',
     tags:[
       'side dish',
       'snack',
@@ -136,7 +136,7 @@ describe('Recipe', () => {
     recipeRepo.filterByName('Chocolate');
     recipeRepo.filterByName('Dirty Steve\s Original Wing Sauce');
 
-    expect(recipeRepo.filterByName('Chocolate')).to.deep.equal([recipeData[0]]);
+    expect(recipeRepo.filterByName('Chocolate')).to.deep.equal([recipeData[0], recipeData[2]]);
     expect(recipeRepo.filterByName('Dirty Steve\s Original Wing Sauce')).to.deep.equal([recipeData[1]]);
   });
 })
